@@ -43,8 +43,6 @@ function blue_worker_session() {
 
         abcli_select
 
-        abcli_sleep 5s
-
         return
     fi
 
