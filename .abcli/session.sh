@@ -7,7 +7,7 @@ function blue_worker_session() {
         abcli_log "blue-worker: session started ..."
 
         local worker_name
-        for worker_name in $abcli_path_git/blue-worker/workers/*.sh ; do
+        for worker_name in $abcli_path_git/blue-worker/.abcli/workers/*.sh ; do
             source $worker_name
         done
 
