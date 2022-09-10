@@ -6,15 +6,24 @@ import logging
 logger = logging.getLogger(__name__)
 
 parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
+
 parser.add_argument(
     "task",
     type=str,
-    help="TBD",
+    default="",
+    help="scheduled_command",
+)
+parser.add_argument(
+    "--needs_gpu",
+    type=int,
+    default=-1,
+    help="0/1/-1",
 )
 args = parser.parse_args()
 
 success = False
-if args.task == "TBD":
+if args.task == "scheduled_command":
+    print(scheduled_command(args.needs_gpu))
     success = True
 else:
     logger.error(f"-{NAME}: {args.task}: command not found.")
