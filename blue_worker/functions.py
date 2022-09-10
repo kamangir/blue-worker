@@ -25,7 +25,7 @@ def scheduled_command(needs_gpu=-1):
         if not list_of_assets:
             command = schedule[list_of_tags]["command"]
         else:
-            list_of_assets = [asset for asset in list_of_assets.split(", ") if asset]
+            list_of_assets = [asset for asset in list_of_assets if asset]
 
             latest_asset = [
                 asset
