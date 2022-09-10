@@ -1,0 +1,27 @@
+{
+  "private_digest": {
+    "command": "abcli private digest",
+    "comment": "every 5 minutes",
+    "needs_gpu": false,
+    "period": 900
+  },
+  "private_maintain": {
+    "command": "abcli private maintain",
+    "comment": "every 4 hours",
+    "needs_gpu": false,
+    "period": 14400
+  },
+  "private_video": {
+    "command": "abcli private video --count 100",
+    "comment": "every 100 frames",
+    "needs_gpu": false,
+    "period": 90000
+  },
+  "Kanata_render": {
+    "command": "abcli Kanata render 600",
+    "comment": "every 4 hours",
+    "enabled": false,
+    "needs_gpu": false,
+    "period": 14400
+  }
+}
