@@ -1,11 +1,11 @@
 from setuptools import setup
 
-from blue_plugin import NAME, VERSION
+from blue_worker import NAME, VERSION
 
 setup(
     name=NAME,
     author="kamangir",
     version=VERSION,
-    description="template for an abcli plugin",
+    description="an ec2 cloud worker for awesome-bash-cli",
     packages=[NAME],
 )
