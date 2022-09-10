@@ -11,9 +11,7 @@ abcli instance from_image
 Then type in,
 
 ```bash
-abcli git clone blue-worker install
-abcli cookie cp worker
-abcli init
+abcli cookie copy worker
 abcli session start
 ```
 
