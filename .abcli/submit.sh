@@ -12,7 +12,7 @@ function abcli_submit() {
     fi
 
     if [ "$task" == "wipe" ] ; then
-        abcli_tag set $(abcli tag search work,~completed,~started --raw 1) completed,wiped
+        abcli_tag set $(abcli tag search work,~completed,~started --log 0) completed,wiped
         return
     fi
 
