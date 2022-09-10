@@ -29,15 +29,13 @@ function blue_worker_session() {
             abcli_select $object
             abcli_download
 
-            if [ "$(abcli_tag is_tagged $object python)" == "True" ] ; then
-                cat script.py
+            if [ "$(abcli_list_in python "$list_of_tags")" == "True" ] ; then
                 abcli_script python source
             else
-                cat script.sh
                 abcli_script source
-                abcli_tag set $abcli_object_name $list_of_tags,~work
             fi
 
+            abcli_tag set $abcli_object_name $list_of_tags,~work
             abcli_tag set $object ~started,completed
 
             abcli_log "blue-worker: session closed."
@@ -45,7 +43,7 @@ function blue_worker_session() {
 
         abcli_select
 
-        abcli_wait 5s
+        abcli_sleep 5s
 
         return
     fi
