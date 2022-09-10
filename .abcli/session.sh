@@ -18,7 +18,7 @@ function blue_worker_session() {
             local tags="$tags,~gpu"
         fi 
 
-        local object=$(abcli_tag search $tags --count 1 --log 0)
+        local object=$(abcli_tag search $tags --count 1 --delim , --log 0)
 
         if [ ! -z "$object" ] ; then
             abcli_log "blue-worker started: $object"
