@@ -12,7 +12,7 @@ function blue_worker_session() {
         done
 
         local tags="work,~started,~completed"
-        if [ "$(abcli_cookie read gpu 0)" == "1" ] ; then
+        if [ "$(abcli_cookie read gpu 0)" == 1 ] ; then
             local tags="gpu,$tags"
         else
             local tags="$tags,~gpu"
