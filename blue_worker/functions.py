@@ -40,7 +40,7 @@ def scheduled_command(needs_gpu=-1):
             time_since_latest_asset = (
                 datetime.datetime.utcnow() - timestamp[latest_asset]
             ).total_seconds()
-            # print("latest {}: {} - {} - {}".format(list_of_tags, latest_asset, timestamp[latest_asset], string.pretty_time(time_since_latest_asset)))
+            # print("latest {}: {} - {} - {}".format(list_of_tags, latest_asset, timestamp[latest_asset], string.pretty_duration(time_since_latest_asset)))
 
             if time_since_latest_asset > schedule[list_of_tags]["period"]:
                 command = schedule[list_of_tags]["command"]
