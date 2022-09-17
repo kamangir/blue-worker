@@ -17,7 +17,7 @@ function blue_worker_schedule() {
 
         $command
 
-        abcli_log "blue_worker: schedule: closed."
+        abcli_log "blue_worker: schedule: completed."
     fi
 }
 
