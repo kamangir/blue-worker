@@ -4,13 +4,13 @@ function abcli_job() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ "$task" == "help" ] ; then
-        abcli_help_line "abcli job <job-name> completed <operation>" \
+        abcli_show_usage "abcli job <job-name> completed <operation>" \
             "register that <job-name> completed <operation>."
-        abcli_help_line "abcli job count <operation> <tag_1,tag_2>" \
+        abcli_show_usage "abcli job count <operation> <tag_1,tag_2>" \
             "count number of jobs for <operation> given <tag_1,tag_2>."
-        abcli_help_line "abcli job find  <operation> <tag_1,tag_2>" \
+        abcli_show_usage "abcli job find  <operation> <tag_1,tag_2>" \
             "find a job           for <operation> given <tag_1,tag_2>."
-        abcli_help_line "abcli job <job-name> started   <operation>" \
+        abcli_show_usage "abcli job <job-name> started   <operation>" \
             "register that <job-name> started   <operation>."
         return
     fi

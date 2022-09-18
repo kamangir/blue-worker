@@ -4,9 +4,9 @@ function abcli_submit() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ "$task" == "help" ] ; then
-        abcli_help_line "abcli submit [tags=<tag_1,tag_2>] <command-line>" \
+        abcli_show_usage "abcli submit [tags=<tag_1,tag_2>] <command-line>" \
             "submit <command-line> to worker and [tag it <tag_1,tag_2>]."
-        abcli_help_line "abcli submit wipe" \
+        abcli_show_usage "abcli submit wipe" \
             "wipe submitted works."
         return
     fi
