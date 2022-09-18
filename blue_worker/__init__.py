@@ -3,7 +3,7 @@ from abcli import file
 
 NAME = "blue_worker"
 
-VERSION = "2.76.1"
+VERSION = "2.78.1"
 
 _, schedule = file.load_json(
     os.path.join(
@@ -14,4 +14,5 @@ _, schedule = file.load_json(
 )
 
 
-from .functions import *
+from .jobs import *
+from .schedule import *
