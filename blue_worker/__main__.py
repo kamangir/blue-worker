@@ -17,7 +17,7 @@ parser.add_argument(
     "--needs_gpu",
     type=int,
     default=-1,
-    help="0/1/-1",
+    help="0|1|-1",
 )
 args = parser.parse_args()
 
