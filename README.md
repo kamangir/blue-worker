@@ -31,4 +31,4 @@ abcli script [python]
 abcli script submit . [<tags>]
 ```
 
-`works` cover tasks that need regular attention, such as maintenance, and are maintained in the [`works` folder](./.abcli/works/).
+`works` cover tasks that need regular attention, such as maintenance, and are maintained in the [`./.abcli/works/`](./.abcli/works/).
