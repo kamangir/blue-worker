@@ -4,6 +4,8 @@
 
 ![image](./assets/marquee.jpg)
 
+---
+
 To start a `blue-worker` open an `abcli` terminal and type in,
 
 ```bash
@@ -12,7 +14,7 @@ abcli cookie copy worker
 abcli session start
 ```
 
-## job and works
+## jobs
 
 To submit a `<command-line>` as a job run,
 
@@ -30,5 +32,7 @@ abcli script [python]
 
 abcli script submit . [<tags>]
 ```
+
+## works
 
 `works` cover activities that occur regularly, such as maintenance, and are maintained in [`./.abcli/works/*.sh`](./.abcli/works/).
