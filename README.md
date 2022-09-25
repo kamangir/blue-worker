@@ -16,7 +16,7 @@ abcli session start
 
 ## jobs
 
-To submit a `<command-line>` as a job run,
+To submit a `<command-line>` as a job type in,
 
 ```bash
 abcli job submit - "<command-line>"
