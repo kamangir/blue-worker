@@ -9,7 +9,9 @@ function blue_worker_jobs() {
     fi 
     local job_name=$(abcli_job search $tags --count 1 --delim , --log 0)
 
-    if [ ! -z "$job_name" ] ; then
+    if [ -z "$job_name" ] ; then
+        abcli_log "blue_worker: jobs: found no job."
+    else
         abcli_log "blue-worker: jobs: started $job_name."
 
         local list_of_tags=$(abcli_tag get $job_name --delim , --log 0)
