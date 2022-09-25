@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 function blue_worker_schedule() {
-    abcli_log "blue_worker: schedule: started ..."
+    abcli_log "blue_worker: schedule: started."
 
     abcli_select
 
@@ -13,12 +13,12 @@ function blue_worker_schedule() {
     if [ -z "$command" ] ; then
         abcli_log "blue_worker: schedule: found no work."
     else
-        abcli_log "blue_worker: schedule: starting $command ..."
+        abcli_log "blue_worker: schedule: started $command"
 
         $command
-
-        abcli_log "blue_worker: schedule: completed."
     fi
+
+    abcli_log "blue_worker: schedule: completed."
 }
 
 blue_worker_schedule
