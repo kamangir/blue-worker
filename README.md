@@ -17,7 +17,7 @@ abcli session start
 To submit a `<command-line>` as a job run,
 
 ```bash
-abcli job submit "<command-line>"
+abcli job submit - "<command-line>"
 ```
 
 Or, write a script in python or bash, and then submit it as a job, 
