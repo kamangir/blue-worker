@@ -12,7 +12,7 @@ function blue_worker_jobs() {
     if [ ! -z "$job_name" ] ; then
         abcli_log "blue-worker: jobs: started $job_name."
 
-        local list_of_tags=$(abcli_tag get $job_name)
+        local list_of_tags=$(abcli_tag get $job_name --delim , --log 0)
 
         abcli_job $job_name started
 
