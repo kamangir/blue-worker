@@ -28,7 +28,8 @@ function abcli_job() {
 
     if [ "$task" == "search" ] ; then
         abcli_tag search \
-            job,~started,~completed,$tags
+            job,~started,~completed,$tags \
+            ${@:3}
         return
     fi
 
