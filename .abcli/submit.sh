@@ -33,7 +33,9 @@ function abcli_submit() {
 
     abcli_upload open
 
-    abcli_tag set . work,$tags
+    abcli_tag set \
+        $abcli_object_name \
+        work,$tags
 
     abcli_select $abcli_object_name_current
 }
