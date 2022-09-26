@@ -12,7 +12,7 @@
     "period": 14400
   },
   "private_video": {
-    "command": "abcli private video --count 100",
+    "command": "abcli private create_video --count 100",
     "comment": "every 100 frames",
     "needs_gpu": false,
     "period": 90000
