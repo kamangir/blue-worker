@@ -1,7 +1,14 @@
 {
+  "private_animation": {
+    "command": "private digest animated ~dryrun,publish --seed 42 --start_schedule 0.9",
+    "comment": "every 24 hours",
+    "needs_gpu": false,
+    "period": 86400
+  },
   "private_digest": {
     "command": "abcli private digest",
     "comment": "every 5 minutes",
+    "enabled": false,
     "needs_gpu": false,
     "period": 900
   },
@@ -12,8 +19,9 @@
     "period": 14400
   },
   "private_video": {
-    "command": "abcli private create_video ~dryrun --count 100",
+    "command": "abcli private create_video --count 100",
     "comment": "every 100 frames",
+    "enabled": false,
     "needs_gpu": false,
     "period": 90000
   },
