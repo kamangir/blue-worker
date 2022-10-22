@@ -42,7 +42,7 @@ function abcli_job() {
 
         abcli_select - ~trail
 
-        local filename=$abcli_object_folder/script.sh
+        local filename=$abcli_object_path/script.sh
         echo "#! /usr/bin/env bash" > $filename
         echo "" >> $filename
         echo "abcli_select" >> $filename
