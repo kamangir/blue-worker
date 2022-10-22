@@ -4,16 +4,14 @@ function abcli_job() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ "$task" == "help" ] ; then
-        abcli_show_usage "abcli job <job-name> completed" \
-            "register that          <job-name> completed."
-        abcli_show_usage "abcli job <job-name> started" \
-            "register that          <job-name> started."
-        abcli_show_usage "abcli job remove        <tag_1,tag_2>" \
-            "remove jobs that are tagged          <tag_1,tag_2>."
-        abcli_show_usage "abcli job search        <tag_1,tag_2>" \
-            "search for jobs that are tagged      <tag_1,tag_2>."
-        abcli_show_usage "abcli job submit        <tag_1,tag_2>        <command-line>" \
-            "submit a job with tags               <tag_1,tag_2> to run <command-line>."
+        abcli_show_usage "abcli job$ABCUL<job-name>${ABCUL}completed|started" \
+            "register that <job-name> completed|started."
+        abcli_show_usage "abcli job remove$ABCUL<tag_1,tag_2>" \
+            "remove jobs that are tagged <tag_1,tag_2>."
+        abcli_show_usage "abcli job search$ABCUL<tag_1,tag_2>" \
+            "search for jobs that are tagged<tag_1,tag_2>."
+        abcli_show_usage "abcli job submit$ABCUL<tag_1,tag_2>$ABCUL<command-line>" \
+            "submit a job with tags <tag_1,tag_2> to run <command-line>."
         return
     fi
 
