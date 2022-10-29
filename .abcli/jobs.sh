@@ -38,7 +38,7 @@ function abcli_job() {
 
         local abcli_object_name_current=$abcli_object_name
 
-        abcli_select - ~trail
+        abcli_select
 
         local filename=$abcli_object_path/script.sh
         echo "#! /usr/bin/env bash" > $filename
