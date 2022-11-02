@@ -23,7 +23,7 @@ function abcli_submit() {
 
     abcli_log "-abcli: submitting to worker: $command"
 
-    local abcli_object_name_current=$abcli_object_name
+    local current_object=$abcli_object_name
 
     abcli_select
 
@@ -37,5 +37,5 @@ function abcli_submit() {
         $abcli_object_name \
         work,$tags
 
-    abcli_select $abcli_object_name_current
+    abcli_select $current_object
 }
