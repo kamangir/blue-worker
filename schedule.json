@@ -1,6 +1,6 @@
 {
   "private_animation": {
-    "command": "private digest animated ~dryrun,publish",
+    "command": "private digest ~dryrun,publish",
     "comment": "every 24 hours",
     "enabled": true,
     "needs_gpu": false,
