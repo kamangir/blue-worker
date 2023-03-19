@@ -1,6 +1,6 @@
 {
   "private_digest": {
-    "command": "private digest ~dryrun,generator=DALL-E,publish",
+    "command": "private digest ~dryrun,publish",
     "comment": "every 24 hours",
     "enabled": true,
     "needs_gpu": false,
