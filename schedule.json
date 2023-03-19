@@ -1,12 +1,12 @@
 {
-  "private_animation": {
-    "command": "private digest animated ~dryrun,publish",
+  "private_digest": {
+    "command": "private digest ~dryrun,publish",
     "comment": "every 24 hours",
     "enabled": false,
     "needs_gpu": false,
     "period": 86400
   },
-  "private_digest": {
+  "private_digest_legacy": {
     "command": "abcli private digest",
     "comment": "every 5 minutes",
     "enabled": false,
