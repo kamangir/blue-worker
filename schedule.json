@@ -2,7 +2,7 @@
   "private_digest": {
     "command": "private digest ~dryrun,publish,verbose",
     "comment": "every 24 hours",
-    "enabled": true,
+    "enabled": false,
     "needs_gpu": false,
     "period": 86400
   },
