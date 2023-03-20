@@ -1,8 +1,8 @@
 {
   "private_digest": {
-    "command": "private digest ~dryrun,publish",
+    "command": "private digest ~dryrun,publish,verbose",
     "comment": "every 24 hours",
-    "enabled": false,
+    "enabled": true,
     "needs_gpu": false,
     "period": 86400
   },
