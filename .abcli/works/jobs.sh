@@ -4,12 +4,12 @@ function blue_worker_jobs() {
     abcli_log "blue_worker: jobs: started."
 
     local tags="~gpu"
-    if [ "$(abcli_cookie read gpu 0)" == 1 ] ; then
+    if [ "$(abcli_cookie read gpu 0)" == 1 ]; then
         local tags="gpu"
-    fi 
+    fi
     local job_name=$(abcli_job search $tags --count 1 --delim , --log 0)
 
-    if [ -z "$job_name" ] ; then
+    if [ -z "$job_name" ]; then
         abcli_log "blue_worker: jobs: found no job."
     else
         abcli_log "blue-worker: jobs: started $job_name."
@@ -21,11 +21,7 @@ function blue_worker_jobs() {
         abcli_select $job_name
         abcli_download
 
-        if [ "$(abcli_list_in python "$list_of_tags")" == "True" ] ; then
-            abcli_script python source
-        else
-            abcli_script source
-        fi
+        echo "wip"
 
         abcli_tag set \
             $abcli_object_name \
